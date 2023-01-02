@@ -40,6 +40,7 @@ const Register = ({ history }) => {
         onChange={(e) => setEmail(e.target.value)}
         autoFocus
       />
+      <br />
       <div className="p-2 text-center ">
         <button
           type="submit"
