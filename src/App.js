@@ -13,6 +13,8 @@ import { auth } from "./firebase";
 import { useDispatch } from "react-redux";
 import ForgotPassword from "./pages/auth/ForgotPassword";
 import { currentUser } from "./functions/auth";
+import History from "./pages/User/History";
+import UserRoute from "./components/routes/UserRoute";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -53,6 +55,7 @@ const App = () => {
         <Route exact path="/register" component={Register} />
         <Route exact path="/register/Complete" component={RegisterComplete} />
         <Route exact path="/forgot/Password" component={ForgotPassword} />
+        <UserRoute exact path="/user/history" component={History} />
       </Switch>
     </>
   );
